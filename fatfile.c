@@ -261,6 +261,8 @@ int fat_fclose(fatfile_t *f) {
 		}
 	}
 #endif
+	if ((int32_t)f->chain_last >= 0 && f->chain)
+		free(f->chain);
 	free(f);
 	return 0;
 }
