@@ -1,4 +1,4 @@
-CFLAGS = -O2 -Wall -Wextra -std=c99 -pedantic -Wno-unused
+CFLAGS = -O2 -Wall -Wextra -std=c99 -pedantic
 APPNAME = fattest
 
 CFLAGS += -DFATDATA_EXTRA="void *file;" -DFAT_WRITE=1 -DFAT_DEBUG=1 -DFAT_SHORT_FIND=0

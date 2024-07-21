@@ -63,6 +63,7 @@ static void ram_add_sec(uint32_t pos, uint8_t *buf) {
 
 static int name_cb(void *cbdata, fat_entry_t *p, const char *name) {
 	uint8_t start = fat_entry_clust(p);
+	(void)cbdata;
 	printf("\"%s\": attr = 0x%02x, start = 0x%x, size = %u\n",
 		name, p->entry.attr, start, p->entry.size);
 	return 0;

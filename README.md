@@ -21,6 +21,8 @@ An example usage can be found in `fattest.c`. This library is written for the [f
 
 - documentation
 - create long filename
+- unicode characters
+- update number of free clusters
 - file time updates
 - multithreading use
 - sync handles to the same file
